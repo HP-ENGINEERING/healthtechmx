@@ -14,7 +14,6 @@
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
-      <!-- Logo en una “tarjeta” blanca como en tu ejemplo -->
       <div class="hero-logo-box">
         <img src="images/logo.jpg" alt="HealthTech Performance Engineering" class="hero-logo" />
       </div>
@@ -48,13 +47,12 @@
       </div>
     </section>
 
-    <!-- SERVICIOS BIOMÉDICOS -->
+    <!-- SERVICIOS -->
     <section class="section section-soft" id="servicios">
       <div class="container">
 
         <h2 class="title center">Nuestros Servicios</h2>
 
-        <!-- Línea con iconos (similar a tu referencia) -->
         <div class="iconline" aria-hidden="true">
           <span class="line"></span>
           <span class="ico">❤</span>
@@ -64,6 +62,7 @@
           <span class="line"></span>
         </div>
 
+        <!-- ✅ 6 tarjetas: 4 biomédicas + licitaciones + farmacéutica -->
         <div class="grid grid-4">
           <article class="card">
             <img src="images/preventivo.jpg" alt="Mantenimiento Preventivo" class="card-img">
@@ -100,39 +99,6 @@
               <p class="card-text">Formación práctica para el manejo de equipos e instrumentos.</p>
             </div>
           </article>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- EXPERIENCIA -->
-    <section class="section" id="experiencia">
-      <div class="container">
-        <h2 class="title">Experiencia</h2>
-        <p class="text">
-          Hemos colaborado con instituciones de alto prestigio como Star Médica, Hospital General Dr. Manuel Gea González,
-          INCAN, INR, INER, INC, Hospital ABC Santa Fe, Hospital Belisario Domínguez, Hospital Juárez de México e ISSEMYM.
-        </p>
-      </div>
-    </section>
-
-    <!-- CALIDAD / LICITACIONES / FARMACÉUTICA -->
-    <section class="section section-soft" id="certificaciones">
-      <div class="container">
-        <h2 class="title center">Calidad y Certificaciones</h2>
-
-        <div class="grid grid-3">
-          <article class="card">
-            <img src="images/iso.jpg" alt="Calidad y Certificaciones" class="card-img">
-            <div class="card-body">
-              <h3 class="card-title">Calidad y<br>Certificaciones</h3>
-              <div class="divider"></div>
-              <p class="card-text">
-                Implementamos y auditamos sistemas de gestión de calidad bajo ISO 9001 e ISO 13485,
-                asegurando procesos seguros, trazables y eficientes.
-              </p>
-            </div>
-          </article>
 
           <article class="card">
             <img src="images/licitaciones.jpg" alt="Licitaciones" class="card-img">
@@ -158,6 +124,113 @@
             </div>
           </article>
         </div>
+
+        <!-- ✅ NUEVA SECCIÓN dentro de Servicios: Auditorías y gestión normativa -->
+        <div style="height: 34px;"></div>
+
+        <h2 class="title center" style="font-size: clamp(24px, 2.3vw, 32px); margin-bottom: 10px;">
+          Auditorías y Gestión Normativa
+        </h2>
+        <p class="text" style="margin: 0 auto 18px; text-align:center; max-width: 900px;">
+          Apoyamos al sector hospitalario en auditorías internas y en la gestión de sistemas de calidad
+          para asegurar el cumplimiento normativo conforme a ISO 9001 e ISO 13485.
+        </p>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <img src="images/auditoria.jpg" alt="Auditorías internas ISO" class="card-img">
+            <div class="card-body">
+              <h3 class="card-title">Auditorías Internas</h3>
+              <div class="divider"></div>
+              <p class="card-text">
+                Planeación, ejecución y reporte de auditorías internas para identificar hallazgos,
+                riesgos y oportunidades de mejora.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/iso.jpg" alt="ISO 9001 e ISO 13485" class="card-img">
+            <div class="card-body">
+              <h3 class="card-title">ISO 9001 e ISO 13485</h3>
+              <div class="divider"></div>
+              <p class="card-text">
+                Implementación, mantenimiento y mejora del sistema de gestión con enfoque en trazabilidad,
+                control documental y seguridad del paciente.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/licitaciones.jpg" alt="Gestión hospitalaria y documentación" class="card-img">
+            <div class="card-body">
+              <h3 class="card-title">Gestión Hospitalaria</h3>
+              <div class="divider"></div>
+              <p class="card-text">
+                Soporte documental y operativo para cumplir requisitos normativos, auditorías externas y procesos
+                de compra/abastecimiento.
+              </p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <h2 class="title">Experiencia</h2>
+        <p class="text">
+          Hemos colaborado con instituciones de alto prestigio como Star Médica, Hospital General Dr. Manuel Gea González,
+          INCAN, INR, INER, INC, Hospital ABC Santa Fe, Hospital Belisario Domínguez, Hospital Juárez de México e ISSEMYM.
+        </p>
+      </div>
+    </section>
+
+    <!-- CALIDAD Y CERTIFICACIONES (solo ISO + texto de equipo) -->
+    <section class="section section-soft" id="certificaciones">
+      <div class="container">
+        <h2 class="title center">Calidad y Certificaciones</h2>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <img src="images/iso.jpg" alt="ISO 9001 e ISO 13485" class="card-img">
+            <div class="card-body">
+              <h3 class="card-title">ISO 9001 e ISO 13485</h3>
+              <div class="divider"></div>
+              <p class="card-text">
+                Implementamos y auditamos sistemas de gestión de calidad bajo ISO 9001 e ISO 13485,
+                asegurando procesos seguros, trazables y eficientes.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/auditoria.jpg" alt="Auditores internos" class="card-img">
+            <div class="card-body">
+              <h3 class="card-title">Auditores Internos</h3>
+              <div class="divider"></div>
+              <p class="card-text">
+                Contamos con auditores internos altamente calificados para acompañar la preparación,
+                seguimiento y mejora continua del sistema de calidad.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/correctivo.jpg" alt="Personal técnico capacitado" class="card-img">
+            <div class="card-body">
+              <h3 class="card-title">Personal Técnico Capacitado</h3>
+              <div class="divider"></div>
+              <p class="card-text">
+                Contamos con personal técnico y/o de servicio capacitado para soportar operaciones, mantenimiento
+                y requerimientos del sector hospitalario.
+              </p>
+            </div>
+          </article>
+        </div>
+
       </div>
     </section>
 
@@ -171,29 +244,3 @@
             <div>
               <p class="contact-item"><strong>📍 Ciudad:</strong> Toluca, México</p>
               <p class="contact-item"><strong>📞 Teléfono:</strong> 55 5495 4921</p>
-              <p class="contact-item"><strong>📧 Correo:</strong> healthtech.engineering@outlook.es</p>
-              <p class="contact-item"><strong>⏰ Horario:</strong> 9:00 – 21:00 hrs</p>
-            </div>
-
-            <div class="contact-actions">
-              <a class="btn-whatsapp" href="https://wa.me/525554954921" target="_blank" rel="noopener">
-                💬 WhatsApp
-              </a>
-              <a class="btn-email" href="mailto:healthtech.engineering@outlook.es">
-                ✉️ Enviar correo
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>© 2026 HealthTech Performance Engineering. Todos los derechos reservados.</p>
-  </footer>
-
-</body>
-</html>
