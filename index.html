@@ -1,85 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HealthTech Performance Engineering</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthTech Performance Engineering</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <!-- HEADER / HERO -->
-    <header class="hero">
-        <img src="images/logo.jpg" alt="HealthTech Performance Engineering" class="hero-logo">
-        <h1>HealthTech Performance Engineering</h1>
-        <p>Excelencia, calidad y soluciones integrales en el sector salud</p>
-    </header>
+  <!-- HERO -->
+  <header class="hero" id="inicio">
+    <div class="hero__overlay"></div>
 
-    <!-- NAV -->
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+    <div class="hero__content">
+      <img src="images/logo.jpg" alt="HealthTech Performance Engineering" class="hero__logo" />
 
-    <!-- CONTENIDO -->
-    <main>
+      <h1 class="hero__title">HealthTech Performance Engineering</h1>
+      <p class="hero__subtitle">Excelencia, calidad y soluciones integrales en el sector salud</p>
+    </div>
+  </header>
 
-        <section id="inicio">
-            <h2>Soluciones Integrales para el Sector Salud</h2>
-            <p>
-                En HealthTech Performance Engineering brindamos servicios especializados
-                en ingeniería biomédica, calidad, licitaciones y farmacéutica,
-                asegurando eficiencia, cumplimiento normativo y alto desempeño.
-            </p>
-        </section>
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#certificaciones">Certificaciones</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-        <section id="servicios" class="servicios">
-            <div class="card">
-                <img src="images/preventivo.jpg" alt="Mantenimiento Preventivo">
-                <h3>Mantenimiento Preventivo</h3>
-                <p>Programas preventivos para asegurar la continuidad y seguridad operativa.</p>
+  <main>
+
+    <!-- NOSOTROS -->
+    <section class="section" id="nosotros">
+      <div class="container">
+        <h2 class="section__title">Quiénes Somos</h2>
+        <p class="section__text">
+          En HealthTech Performance Engineering brindamos soluciones especializadas en ingeniería biomédica,
+          calidad, licitaciones y farmacéutica. Nuestro enfoque está orientado a la continuidad operativa,
+          cumplimiento normativo y resultados confiables para el sector salud.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section section--soft" id="servicios">
+      <div class="container">
+
+        <h2 class="section__title">Nuestros Servicios</h2>
+
+        <!-- línea de iconos (decorativa) -->
+        <div class="iconline" aria-hidden="true">
+          <span class="iconline__dot"></span>
+          <span class="iconline__icon">❤</span>
+          <span class="iconline__icon">⚙</span>
+          <span class="iconline__icon">★</span>
+          <span class="iconline__icon">⚕</span>
+          <span class="iconline__dot"></span>
+        </div>
+
+        <div class="cards cards--4">
+          <article class="card">
+            <img src="images/preventivo.jpg" alt="Mantenimiento Preventivo" class="card__img">
+            <div class="card__body">
+              <h3 class="card__title">Mantenimiento<br>Preventivo</h3>
+              <div class="card__divider"></div>
+              <p class="card__text">Calibración y mantenimiento regular de equipos médicos.</p>
             </div>
+          </article>
 
-            <div class="card">
-                <img src="images/correctivo.jpg" alt="Mantenimiento Correctivo">
-                <h3>Mantenimiento Correctivo</h3>
-                <p>Diagnóstico y reparación de equipos biomédicos especializados.</p>
+          <article class="card">
+            <img src="images/correctivo.jpg" alt="Mantenimiento Correctivo" class="card__img">
+            <div class="card__body">
+              <h3 class="card__title">Mantenimiento<br>Correctivo</h3>
+              <div class="card__divider"></div>
+              <p class="card__text">Reparación y diagnóstico de fallas en equipos médicos.</p>
             </div>
+          </article>
 
-            <div class="card">
-                <img src="images/venta.jpg" alt="Venta de Equipos">
-                <h3>Venta de Equipos</h3>
-                <p>Suministro de equipo médico y tecnología especializada.</p>
+          <article class="card">
+            <img src="images/venta.jpg" alt="Venta de Equipo Médico" class="card__img">
+            <div class="card__body">
+              <h3 class="card__title">Venta de Equipo<br>Médico</h3>
+              <div class="card__divider"></div>
+              <p class="card__text">Venta de equipos médicos nuevos y reacondicionados.</p>
             </div>
+          </article>
 
-            <div class="card">
-                <img src="images/capacitacion.jpg" alt="Capacitación">
-                <h3>Capacitación</h3>
-                <p>Entrenamiento técnico y operativo para personal clínico y técnico.</p>
+          <article class="card">
+            <img src="images/capacitacion.jpg" alt="Capacitación Técnica" class="card__img">
+            <div class="card__body">
+              <h3 class="card__title">Capacitación<br>Técnica</h3>
+              <div class="card__divider"></div>
+              <p class="card__text">Formación práctica para el manejo de equipos e instrumentos.</p>
             </div>
-        </section>
+          </article>
+        </div>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p><strong>Ciudad:</strong> Toluca, México</p>
-            <p><strong>Teléfono:</strong> 55 5495 4921</p>
-            <p><strong>Correo:</strong> healthtech.engineering@outlook.es</p>
-            <p><strong>Horario:</strong> 9:00 – 21:00 hrs</p>
+      </div>
+    </section>
 
-            <a class="whatsapp" href="https://wa.me/525554954921" target="_blank">
-                Contactar por WhatsApp
-            </a>
-        </section>
+    <!-- EXPERIENCIA -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <h2 class="section__title">Experiencia</h2>
+        <p class="section__text">
+          Hemos colaborado con instituciones de alto prestigio como Star Médica, Hospital General Dr. Manuel Gea González,
+          INCAN, INR, INER, INC, Hospital ABC Santa Fe, Hospital Belisario Domínguez, Hospital Juárez de México e ISSEMYM.
+        </p>
+      </div>
+    </section>
 
-    </main>
+    <!-- CALIDAD Y CERTIFICACIONES -->
+    <section class="section section--soft" id="certificaciones">
+      <div class="container">
 
-    <footer>
-        <p>© 2026 HealthTech Performance Engineering. Todos los derechos reservados.</p>
-    </footer>
+        <h2 class="section__title">Calidad y Certificaciones</h2>
 
-</body>
-</html>
+        <div class="cards cards--3">
+          <article class="card">
+            <img src="images/iso.jpg" alt="Calida
 
 
